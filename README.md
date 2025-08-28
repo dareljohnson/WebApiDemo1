@@ -1,4 +1,13 @@
 # TodoApp Solution
+#
+<p align="left">
+  <a href="https://github.com/dareljohnson/WebApiDemo1/actions">
+    <img src="https://github.com/dareljohnson/WebApiDemo1/workflows/.NET%20Build/badge.svg" alt="Build Status" />
+  </a>
+  <a href="https://codecov.io/gh/dareljohnson/WebApiDemo1">
+    <img src="https://codecov.io/gh/dareljohnson/WebApiDemo1/branch/main/graph/badge.svg" alt="Code Coverage" />
+  </a>
+</p>
 
 ## Overview
 
