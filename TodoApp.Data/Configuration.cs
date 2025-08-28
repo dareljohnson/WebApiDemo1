@@ -1,5 +1,4 @@
 using System.Data.Entity.Migrations;
-using TodoApp.Data;
 
 namespace TodoApp.Data.Migrations
 {

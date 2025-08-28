@@ -1,12 +1,10 @@
 using System.Web.Http;
-using Unity;
-using Unity.Lifetime;
-using Unity.WebApi;
-using TodoApp.Core;
 using TodoApp.Data;
 using TodoApp.Data.Repositories;
 using TodoApp.Services;
-using Unity.Injection;
+using Unity;
+using Unity.Lifetime;
+using Unity.WebApi;
 
 namespace TodoApp.Api
 {

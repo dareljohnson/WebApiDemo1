@@ -1,6 +1,5 @@
 using System.Linq;
 using TodoApp.Core;
-using TodoApp.Data.Repositories;
 
 namespace TodoApp.Data.Repositories
 {
@@ -9,13 +8,13 @@ namespace TodoApp.Data.Repositories
     /// </summary>
     public interface ITodoRepository : IRepository<TodoItem>
     {
-    // Add any TodoItem-specific repository methods here
-    System.Linq.IQueryable<TodoItem> GetByTitle(string title);
-    System.Linq.IQueryable<TodoItem> GetByPriority(TodoPriority priority);
-    System.Linq.IQueryable<TodoItem> GetCompleted();
-    System.Linq.IQueryable<TodoItem> GetPending();
+        // Add any TodoItem-specific repository methods here
+        System.Linq.IQueryable<TodoItem> GetByTitle(string title);
+        System.Linq.IQueryable<TodoItem> GetByPriority(TodoPriority priority);
+        System.Linq.IQueryable<TodoItem> GetCompleted();
+        System.Linq.IQueryable<TodoItem> GetPending();
     }
-    
+
     /// <summary>
     /// Implementation of TodoItem repository
     /// </summary>

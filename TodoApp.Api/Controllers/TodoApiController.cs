@@ -1,12 +1,11 @@
+using log4net;
 using System;
 using System.Linq;
 using System.Web.Http;
 using TodoApp.Api.Mappers;
 using TodoApp.Api.Models;
 using TodoApp.Core;
-using TodoApp.Data;
 using TodoApp.Services;
-using log4net;
 
 namespace TodoApp.Api.Controllers
 {
@@ -16,8 +15,8 @@ namespace TodoApp.Api.Controllers
     [RoutePrefix("api/todos")]
     public class TodoApiController : ApiController
     {
-    private readonly ITodoService _todoService;
-    private readonly ILog _logger;
+        private readonly ITodoService _todoService;
+        private readonly ILog _logger;
 
         // For dependency injection (testing)
         public TodoApiController(ITodoService todoService, ILog logger)
