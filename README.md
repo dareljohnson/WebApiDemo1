@@ -1,9 +1,11 @@
 # TodoApp Solution
 
 ## Overview
+
 This solution is a .NET Framework 4.8.1 web API and service application for managing Todo items, featuring a layered architecture with repository, service, and API layers. It includes robust unit and integration tests, dependency injection, and logging.
 
 ## Features
+
 - **Todo Management**: CRUD operations for Todo items (title, description, priority, completion status, created/completed dates).
 - **Repository Pattern**: Generic and Todo-specific repositories for data access abstraction.
 - **Service Layer**: Business logic for Todo operations, statistics, and validation.
@@ -20,7 +22,6 @@ This solution is a .NET Framework 4.8.1 web API and service application for mana
   - In-memory test context for isolated tests (TestTodoContext)
   - Security handler unit tests for header presence
 - **NuGet Package Management**: All dependencies managed via `packages.config` and NuGet restore.
-
 
 # Build & Test Status
 
@@ -123,6 +124,7 @@ Content-Type: application/json
 ```http
 GET /api/todoapicontroller
 ```
+
 Inspect the response headers for:
 - `X-Content-Type-Options: nosniff`
 - `X-Frame-Options: DENY`
@@ -228,6 +230,7 @@ Content-Type: application/json
 ---
 
 ## Test Coverage
+
 - **Service Layer Tests**: Validate business logic, statistics, and error handling using Moq.
 - **Repository Layer Tests**: Integration tests for CRUD, queries, and edge cases using LocalDB and TestTodoContext.
 - **API Layer Tests**: (Planned/Optional) for controller endpoints.
@@ -235,6 +238,7 @@ Content-Type: application/json
 - **Test Database**: All repository tests use a dedicated LocalDB database (`TodoAppTestDb`).
 
 ## Configuration
+
 - **App.config / Web.config**: Connection strings for production and test databases.
 - **Test Context**: `TestTodoContext` uses LocalDB, configured in `TodoApp.Tests/App.config`.
 - **Database Initialization**: `InitializeDatabase` ensures the test database is created if not present.
@@ -242,16 +246,19 @@ Content-Type: application/json
 - **Unity**: Registered in `App_Start/UnityConfig.cs` for DI.
 
 ## How to Run Tests
+
 1. Ensure LocalDB is installed (default with Visual Studio).
 2. Run `dotnet test TodoApp.Tests\TodoApp.Tests.csproj --no-build` from the solution directory.
 3. If you encounter SQL datetime errors, clear the test database using the provided `clear_test_todoitems.sql` script.
 
 ## Troubleshooting
+
 - **WebApplication.targets error**: The web project is excluded from CLI builds; use Visual Studio for full solution builds.
 - **SQL datetime errors**: Caused by invalid data in the test database; clear with the provided script.
 - **Test discovery**: Ensure all NuGet packages are restored and MSTest is installed.
 
 ## Completed Milestones
+
 - Migrated all projects to .NET Framework 4.8.1
 - Fixed all NuGet/configuration issues
 - Integrated MSTest, Moq, log4net, and Unity
