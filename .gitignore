@@ -1,0 +1,76 @@
+# .gitignore for Visual Studio, .NET Framework, and common tools
+
+# Build results
+[Bb]in/
+[Oo]bj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS Code
+.vscode/
+.history/
+
+# NuGet
+*.nupkg
+packages/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Entity Framework
+*.ldb
+*.mdf
+*.ldf
+*.ndf
+App_Data/
+
+# Logs
+*.log
+log4net.config
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
+
+# Web publish
+.publish/
+
+# IIS Express
+/.vs/
+*.vspscc
+*.vssscc
+
+# Resharper
+_ReSharper*/
+*.[Rr]e[Ss]harper
+
+# Rider
+.idea/
+
+# OS generated
+.DS_Store
+Thumbs.db
+
+# Others
+*.swp
+*.bak
+*.tmp
+*.orig
+*.rej
+
+# LocalDB
+*.mdf
+*.ldf
+
+# User secrets
+secrets.json
+
+# Swagger auto-generated
+swagger/
+
+# Ignore local SQL scripts
+clear_test_todoitems.sql
