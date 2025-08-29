@@ -281,6 +281,13 @@ For further details, see inline code comments and configuration files in each pr
 
 ---
 
+## Future Features
+
+- Add authentication mechanisms (e.g., Auth Token validation)
+- Implement role-based security and authorization
+
+---
+
 ## License
 
 This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
