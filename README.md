@@ -8,6 +8,8 @@
 
 This solution is a .NET Framework 4.8.1 web API and service application for managing Todo items, featuring a layered architecture with repository, service, and API layers. It includes robust unit and integration tests, dependency injection, and logging.
 
+**Compatible with both Visual Studio 2019 and Visual Studio 2022.**
+
 ## Features
 
 - **Todo Management**: CRUD operations for Todo items (title, description, priority, completion status, created/completed dates).
@@ -276,3 +278,9 @@ Content-Type: application/json
 
 ---
 For further details, see inline code comments and configuration files in each project.
+
+---
+
+## License
+
+This project is licensed under the Apache License, Version 2.0. See the [LICENSE](LICENSE) file for details.
